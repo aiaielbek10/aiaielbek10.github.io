@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uz">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Uzbek Racing — O'zbekiston ko'chalarida haydang!</title>
+<meta name="description" content="Uzbek Racing — Nexia, Damas, Lacetti va boshqa o'zbek mashinalarida shahar bo'ylab haydash o'yini. Google Play'dan bepul yuklab oling.">
+<meta property="og:title" content="Uzbek Racing">
+<meta property="og:description" content="O'zbek mashinalarida shahar bo'ylab haydash o'yini. Bepul!">
+<meta property="og:image" content="img/banner.png">
+<link rel="icon" href="img/icon.png">
+<style>
+  :root {
+    --blue: #1e8fd6;
+    --green: #1eb53a;
+    --bg: #0b1220;
+    --card: #141d33;
+    --text: #f2f5fa;
+    --muted: #a9b3c7;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+  }
+  .flagbar { height: 6px; background: linear-gradient(to bottom, var(--blue) 0 33%, #fff 33% 66%, var(--green) 66%); }
+  header {
+    position: relative;
+    min-height: 420px;
+    display: flex;
+    align-items: flex-end;
+    background: url("img/banner.png") center / cover no-repeat;
+  }
+  header::after {
+    content: "";
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, var(--bg) 5%, rgba(11,18,32,.35) 60%, rgba(11,18,32,.1));
+  }
+  .hero {
+    position: relative; z-index: 1;
+    width: 100%; max-width: 1000px; margin: 0 auto;
+    padding: 24px 16px 32px;
+    display: flex; gap: 20px; align-items: center; flex-wrap: wrap;
+  }
+  .hero img { width: 104px; height: 104px; border-radius: 24px; box-shadow: 0 8px 24px rgba(0,0,0,.5); }
+  .hero h1 { margin: 0; font-size: clamp(32px, 6vw, 52px); letter-spacing: 1px; text-shadow: 0 2px 8px rgba(0,0,0,.6); }
+  .hero p { margin: 4px 0 0; color: #dfe6f3; font-size: 18px; text-shadow: 0 1px 4px rgba(0,0,0,.7); }
+  .play-btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-top: 14px; padding: 14px 26px;
+    background: var(--green); color: #fff; text-decoration: none;
+    font-size: 19px; font-weight: 700; border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(30,181,58,.35);
+  }
+  .play-btn:hover { filter: brightness(1.1); }
+  main { max-width: 1000px; margin: 0 auto; padding: 8px 16px 40px; }
+  h2 { font-size: 26px; margin: 36px 0 14px; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .feature { background: var(--card); border-radius: 16px; padding: 18px; border: 1px solid rgba(255,255,255,.06); }
+  .feature b { display: block; font-size: 18px; margin-bottom: 4px; }
+  .feature span { color: var(--muted); }
+  .shots { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .shots img { width: 100%; border-radius: 12px; display: block; border: 1px solid rgba(255,255,255,.08); }
+  .cta { text-align: center; background: var(--card); border-radius: 20px; padding: 28px 16px; margin-top: 36px; }
+  footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px 16px 32px; border-top: 1px solid rgba(255,255,255,.06); }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="flagbar"></div>
+
+<header>
+  <div class="hero">
+    <img src="img/icon.png" alt="Uzbek Racing belgisi">
+    <div>
+      <h1>UZBEK RACING</h1>
+      <p>O'zbek mashinalarida shahar ko'chalari bo'ylab haydang! 🇺🇿</p>
+      <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.uzbekracing.game">▶ Google Play'dan yuklab olish</a>
+    </div>
+  </div>
+</header>
+
+<main>
+  <h2>O'yinda nimalar bor?</h2>
+  <div class="features">
+    <div class="feature"><b>🚗 O'zbek mashinalari</b><span>Nexia 2 bilan boshlang. Damas, Lacetti, Cobalt, Gentra va Tracker tez orada qo'shiladi.</span></div>
+    <div class="feature"><b>🕹 Haqiqiy boshqaruv</b><span>Rul, gaz va tormoz pedallari, qo'lda uzatmalar qutisi (1–5 va R).</span></div>
+    <div class="feature"><b>🪙 Tangalar yig'ing</b><span>Har bir haydalgan kilometr uchun tanga oling, kunlik bonusni qo'lga kiriting.</span></div>
+    <div class="feature"><b>🔢 O'z nomeringiz</b><span>Mashinangizga o'zingiz xohlagan davlat raqamini qo'ying.</span></div>
+    <div class="feature"><b>🎵 Musiqa</b><span>Yo'lda sevimli treklaringizni tinglang, o'z musiqangizni ham qo'shishingiz mumkin.</span></div>
+    <div class="feature"><b>📷 Bir necha kamera</b><span>Orqadan, salon ichidan yoki yon tomondan ko'ring.</span></div>
+  </div>
+
+  <h2>Rasmlar</h2>
+  <div class="shots">
+    <img src="img/shot1.png" alt="O'yindan rasm 1" loading="lazy">
+    <img src="img/shot2.png" alt="O'yindan rasm 2" loading="lazy">
+    <img src="img/shot3.png" alt="O'yindan rasm 3" loading="lazy">
+    <img src="img/shot4.png" alt="O'yindan rasm 4" loading="lazy">
+    <img src="img/shot5.png" alt="O'yindan rasm 5" loading="lazy">
+    <img src="img/shot6.png" alt="O'yindan rasm 6" loading="lazy">
+  </div>
+
+  <div class="cta">
+    <h2 style="margin-top:0">Bepul yuklab oling!</h2>
+    <a class="play-btn" href="https://play.google.com/store/apps/details?id=com.uzbekracing.game">▶ Google Play</a>
+  </div>
+</main>
+
+<footer>
+  © 2026 Uzbek Racing · <a href="privacy.html">Maxfiylik siyosati (Privacy Policy)</a>
+</footer>
+</body>
+</html>
